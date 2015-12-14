@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 module.exports = function(grunt) {
 
   grunt.initConfig({
@@ -18,6 +19,9 @@ module.exports = function(grunt) {
         },
         watch: true,
         keepalive: true,
+        plugins: [
+          new webpack.optimize.UglifyJsPlugin()
+        ],
       },
     }
   });
