@@ -1,0 +1,15 @@
+#centerImage {
+  position: relative;
+  width: 50vw;
+  height: 50vw;
+  margin: 0 auto;
+}
+
+.chair {
+  position: absolute;
+  font-size: 13px;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}

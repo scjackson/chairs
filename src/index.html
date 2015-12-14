@@ -1,0 +1,13 @@
+<html ng-app="chairsApp">
+  <head>
+    <script async src="/chairs.js"></script>
+    <link rel="stylesheet" href="/chairs.css">
+  </head>
+  <body ng-controller="ChairsController">
+    <div id="centerImage" class="ng-cloak">
+      <span ng-repeat="chair in chairs track by $index" ng-style="chair.style" class="chair">
+          {{ $index + 1 }}
+      </span>
+    </div>
+  </body>
+</html>
